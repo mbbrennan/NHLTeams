@@ -22,6 +22,6 @@ namespace NHLTeams.Models
             optionsBuilder.UseSqlServer("Server=DESKTOP-UVR8UE5;Database=NHL;Trusted_Connection=True;");
         }
         public DbSet<Team> Teams { get; set; }
-
+        public DbSet<Division> Divisions { get; set; }
     }
 }
