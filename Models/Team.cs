@@ -13,5 +13,6 @@ namespace NHLTeams.Models
         public string Abbrev { get; set; }
         public string Fullname { get; set; }
 
+        public string Building { get; set; }
     }
 }

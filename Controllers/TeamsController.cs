@@ -53,7 +53,7 @@ namespace NHLTeams.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Abbrev,Fullname")] Team team)
+        public async Task<IActionResult> Create([Bind("Id,Abbrev,Fullname, Building")] Team team)
         {
             if (ModelState.IsValid)
             {
@@ -85,7 +85,7 @@ namespace NHLTeams.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Abbrev,Fullname")] Team team)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Abbrev,Fullname, Building")] Team team)
         {
             if (id != team.Id)
             {
