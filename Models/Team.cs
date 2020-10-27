@@ -14,5 +14,6 @@ namespace NHLTeams.Models
         public string Fullname { get; set; }
 
         public string Building { get; set; }
+        public int DivId { get; set; }
     }
 }
